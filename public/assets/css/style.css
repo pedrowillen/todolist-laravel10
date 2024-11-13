@@ -1,0 +1,199 @@
+:root {
+    --color-primary: #6143ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 100px;
+    background-color: var(--color-primary);
+}
+
+.content {
+    height: 100vh;
+    width: calc(100% - 100px);
+}
+
+nav {
+    height: 100px;
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.btn {
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section.graph {
+    width: 33%;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graph-header h2 {
+    display: inline-block;
+}
+
+.graph-header-subtl {
+    margin-top: 10px;
+}
+
+.graph-placeholder {
+    background-color: #ccc;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.list {
+    padding: 5px 15px;
+    flex:1;
+}
+
+.list-header {
+    display: flex;
+}
+
+.list-header select {
+    font-size: 16px;
+    padding: 3px 5px;
+    border: 1px solid #00000028;
+    border-radius: 2px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task:hover {
+    background-color: #ccc;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions a {
+    text-decoration: none;
+    color:  black;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.priority, .actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.sphere {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.task-title {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#create-task-section {
+    margin: auto;
+    /* background-color: #c9c9c9; */
+}
+
+#create-task-section>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-area>label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-area>input, .input-area>select{
+    height: 40px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #00000063;
+}
+
+.input-area>textarea {
+    height: 160px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 10px 5px 0 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid #00000063;
+}
